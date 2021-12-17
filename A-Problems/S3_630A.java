@@ -6,9 +6,14 @@ public class S3_630A
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-
-		int mul = Math.pow(5,n) % 100;
-		System.out.println(mul);
+//		long n = sc.nextInt();
+//		 StringBuilder s = new StringBuilder();
+//
+//		for(int i = 1; i<=n; i= i * 1000000000)
+//		{
+//			mul = (StringBuilder)(mul * 5 * 5) % 100L;
+//		}
+//
+//		System.out.println(mul);
 	}
 }
