@@ -20,9 +20,36 @@ public class S9_59A
 
 		noOfLowerCase = n - noOfUpperCase;
 
+		StringBuilder result = new StringBuilder();
 		if(noOfUpperCase > noOfLowerCase)
-			System.out.println(s.toUpperCase());
+		{
+			for(int i =0; i<n; i++)
+			{
+				char ch = s.charAt(i);
+				if(Character.isLowerCase(ch))
+				{
+					ch = Character.toUpperCase(ch);
+				}
+				result.append(ch);
+
+			}
+		}
+			
 		else
-			System.out.println(s.toLowerCase());
+			{
+				for(int i = 0; i<n; i++)
+				{
+					char ch = s.charAt(i);
+				if(Character.isUpperCase(ch))
+				{
+					ch = Character.toLowerCase(ch);
+				}
+				result.append(ch);
+				}
+
+			}
+
+
+			System.out.println(result.toString());
 	}
 }
